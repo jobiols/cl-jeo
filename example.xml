@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odooenv>
+    <name>jeo</name>
+    <port>8000</port>
+    <odoover>8.0</odoover>
+    <repos>
+        <repo>
+            <usr>jobiols</usr>
+            <name>odoo-argentina</name>
+            <branch>8.0</branch>
+        </repo>
+        <repo>
+            <usr>jobiols</usr>
+            <name>aeroo_reports</name>
+            <branch>8.0</branch>
+        </repo>
+        <repo>
+            <usr>jobiols</usr>
+            <name>server-tools</name>
+            <branch>8.0</branch>
+        </repo>
+    </repos>
+    <images>
+        <image>
+            <name>aeroo</name>
+            <usr>jobiols</usr>
+            <img>aeroo-docs</img>
+        </image>
+        <image>
+            <name>odoo</name>
+            <usr>jobiols</usr>
+            <img>odoo-jeo</img>
+            <ver>8.0</ver>
+        </image>
+    </images>
+</odooenv>
