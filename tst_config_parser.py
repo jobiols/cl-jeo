@@ -19,5 +19,16 @@
 #
 #-----------------------------------------------------------------------------------
 
+import ConfigParser
+
+config = ConfigParser.ConfigParser()
+config.read('FILE.INI')
+print(config['DEFAULT']['path'])     # -> "/path/name/"
+config['DEFAULT']['path'] = '/var/shared/'    # update
+config['DEFAULT']['default_message'] = 'Hey! help me!!'   # create
+
+with open('FILE.INI', 'w') as configfile:    # save
+    config.write(configfile)
+
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

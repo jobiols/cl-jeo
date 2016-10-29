@@ -19,6 +19,7 @@
 #
 # -----------------------------------------------------------------------------------
 from xml.dom import minidom
+import json
 
 tst_repo = {'name': 'jeo', 'port': '8000', 'odoover': '8.0',
        'repos': [
@@ -44,6 +45,11 @@ tst_repo = {'name': 'jeo', 'port': '8000', 'odoover': '8.0',
            {'name': 'backup', 'usr': 'jobiols', 'img': 'backup'},
        ]
        }
+
+def write_json():
+    f = open('data.json', "w")
+    json.dump(tst_repo, f)
+    f.close()
 
 def read_xml_client(filename):
     """ Lee un archivo xml con la definicion del cliente y devuelve un diccionario
@@ -78,6 +84,10 @@ def read_xml_client(filename):
     ret['images'] = get_list('image', itemllist)
 
     return ret
+
+
+write_json()
+exit()
 
 ret = read_xml_client('example.xml')
 

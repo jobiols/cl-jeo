@@ -18,6 +18,17 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 #-----------------------------------------------------------------------------------
+import json
+from pprint import pprint
 
+def json_read(data):
+    with open(data) as data_file:
+        return json.load(data_file)
 
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+def json_write(data):
+    f = open(data, "w")
+    json.dump(data, f)
+    f.close()
+
+a = json_read('data.json')
+pprint (a)
