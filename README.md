@@ -1,4 +1,4 @@
-# customer
+# customer --
 odoo repo configuration for this customer
 
 evaluamos yaml, json, config parser, dependencies.txt (del travis)
