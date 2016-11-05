@@ -1,5 +1,5 @@
 {
-  "name": "jeo", "odoover": "8.0", "port": "8000",
+  "name": "reves", "odoover": "8.0", "port": "8000",
   "images": [
   {"name": "aeroo", "img": "aeroo-docs", "usr": "jobiols"},
   {"ver": "8.0", "name": "odoo", "img": "odoo-jeo", "usr": "jobiols"},
