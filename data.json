@@ -7,17 +7,6 @@
   {"name": "backup", "img": "backup", "usr": "jobiols"}],
   "repos": [
     {"repo": "odoo-argentina", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "aeroo_reports", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "server-tools", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "jeo", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "adhoc-account-payment", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "adhoc-crm", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "adhoc-reporting-engine", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "adhoc-product", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "adhoc-partner", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "adhoc-stock", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "adhoc-account-financial-tools", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "web", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "serviciosbaeza-odoo-addons", "usr": "jobiols", "branch": "8.0"},
-    {"repo": "crm", "usr": "jobiols", "branch": "8.0"}]
+    {"repo": "aeroo_reports", "usr": "jobiols", "branch": "8.0"}
+    ]
   }
