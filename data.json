@@ -8,5 +8,5 @@
   "repos": [
     {"repo": "odoo-argentina", "usr": "jobiols", "branch": "8.0"},
     {"repo": "aeroo_reports", "usr": "jobiols", "branch": "8.0"}
-    ]
+  ]
   }
