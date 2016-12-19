@@ -20,7 +20,7 @@
 # -----------------------------------------------------------------------------------
 {
     'name': 'jeo Software',
-    'version': '8.0.1.0',
+    'version': '9.0.1.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
     'description': """
@@ -33,14 +33,14 @@ Customización jeo Software
 """,
     'author': 'jeo Software',
     'depends': [
-        'l10n_ar_base',  # modulo base para localización argentina
-        'base_vat_unique',  # evita que duplique cuit
+        #'l10n_ar_base',  # modulo base para localización argentina
+        #'base_vat_unique',  # evita que duplique cuit
         #        'base_vat_unique_parent',  # evita que duplique cuit en multicompañia
-        'disable_openerp_online',  # elimina referencias a odoo online
-        'account_cancel',  # Muestra el check en los diarios que permite cancelar asientos
-        'hide_product_variants',  # oculta las variantes
-        'invoice_order_by_id',  # ordena facturas ultima arriba
-        'mass_mailing_partner'  # agrega menu para mandar un partner a la mailing list
+        #'disable_openerp_online',  # elimina referencias a odoo online
+        #'account_cancel',  # Muestra el check en los diarios que permite cancelar asientos
+        #'hide_product_variants',  # oculta las variantes
+        #'invoice_order_by_id',  # ordena facturas ultima arriba
+        #'mass_mailing_partner'  # agrega menu para mandar un partner a la mailing list
         # 'account_invoice_tax_wizard',  # agrega menu add_taxes para cargar percepciones
         # 'sale_order_recalculate_prices',  # agrega boton para recalcular precios
         #        'account_journal_sequence'         # agrega un campo de secuencia en el diario para elegirlos
@@ -55,6 +55,5 @@ Customización jeo Software
     'application': True,
     'auto_install': False,
     'images': [],
-
 }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
