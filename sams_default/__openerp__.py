@@ -22,14 +22,14 @@
     'name': 'sams',
     'version': '9.0.1.0',
     'category': 'Tools',
-    'summary': 'Customización Jeo Software',
+    'summary': 'Customización Sams',
     'description': """
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-Customización jeo Software
-==========================
+Customización Sams
+==================
 """,
     'author': 'jeo Software',
     'depends': [
