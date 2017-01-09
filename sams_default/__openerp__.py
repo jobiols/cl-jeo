@@ -19,7 +19,7 @@
 #
 # -----------------------------------------------------------------------------------
 {
-    'name': 'jeo Software',
+    'name': 'sams',
     'version': '9.0.1.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
