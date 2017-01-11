@@ -31,7 +31,7 @@
 Customización Sams
 ==================
 """,
-    'author': 'Sams',
+    'author': 'jeo Software',
     'depends': [
         'l10n_ar_base',             # modulo base para localización argentina
         'base_vat_unique',          # evita que duplique cuit
@@ -47,7 +47,7 @@ Customización Sams
 #        'consult_product_price',   # consulta de precios
 #        'partner_search',          # permite buscar partners por varios criterios
 #        'account_journal_sequence' # agrega un campo de secuencia en el diario para elegirlos
-         'account_statement_move_import'  # agrega boton de importar aputnes en extractos bancarios
+         'account_statement_move_import',  # agrega boton de importar aputnes en extractos bancarios
          'account_journal_sequence', #Adds sequence field on account journal and it is going to be considered when choosing journals in differents models.
         'l10n_ar_aeroo_sale',       # ventas
         'l10n_ar_aeroo_purchase',   # compras
@@ -60,6 +60,7 @@ Customización Sams
 #        'ticket_citi_fix',         # corrige citi para pv impresor fiscal
          'product_unique_default_code', # impide que se duplique el default_code
          'hide_messaging',          # oculta el menu de mensajeria
+         'account_invoice_tax_wizard', #Para cargar percepciones el cual nos remplaza el link de agregar impuestos por otro "agregarimpuestos"
     ],
     'data': [
     ],
