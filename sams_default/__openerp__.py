@@ -20,7 +20,7 @@
 # -----------------------------------------------------------------------------------
 {
     'name': 'sams',
-    'version': '8.0.1.0',
+    'version': '8.0.2.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
     'description': """
@@ -30,6 +30,26 @@
 
 Customización Sams
 ==================
+
+**Lista de módulos instalados**
+
+- 'l10n_ar_base',  # modulo base para localización argentina
+- 'base_vat_unique',  # evita que duplique cuit
+- 'disable_openerp_online',  # elimina referencias a odoo online
+- 'account_cancel',  # Muestra el check en los diarios que permite cancelar asientos
+- 'hide_product_variants',  # oculta las variantes
+- 'invoice_order_by_id',  # ordena facturas ultima arriba
+- 'account_statement_move_import',  # agrega boton de importar aputnes en extractos bancarios
+- 'account_journal_sequence', # Adds sequence field on account journal and it is going to be considered when choosing journals in differents models.
+- 'l10n_ar_aeroo_sale',  # ventas
+- 'l10n_ar_aeroo_purchase',  # compras
+- 'l10n_ar_aeroo_einvoice',  # factura electrónica
+- 'l10n_ar_aeroo_stock',  # stock
+- 'product_unique_default_code',  # impide que se duplique el default_code
+- 'hide_messaging',  # oculta el menu de mensajeria
+- 'account_invoice_tax_wizard', # Agrega link Add Tax para agregar impuestos en factura
+- 'mrp',  # módulo de fabricación
+
 """,
     'author': 'jeo Software',
     'depends': [
@@ -60,7 +80,7 @@ Customización Sams
         #        'ticket_citi_fix',         # corrige citi para pv impresor fiscal
         'product_unique_default_code',  # impide que se duplique el default_code
         'hide_messaging',  # oculta el menu de mensajeria
-        'account_invoice_tax_wizard',
+        'account_invoice_tax_wizard', # Agrega link Add Tax para agregar impuestos en factura
         # Para cargar percepciones el cual nos remplaza el link de agregar impuestos por otro "agregarimpuestos"
         'mrp',  # módulo de fabricación
     ],
