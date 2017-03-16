@@ -59,7 +59,7 @@ Customización Art Attack
         'base_multi_store',  # agrega capacidad de multitienda analogo a multicompañia
         # 'voucher_payment_check_fix',  # evita que aparezca cheques propios en medios de pago de cliente
         'point_of_sale',  # Terminal punto de venta
-        'MRP',  # planificacion de producción.
+        'mrp',  # planificacion de producción.
         'pos_pricelist',
         'pos_discount',
     ],
