@@ -64,6 +64,7 @@ Customización Art Attack
         'pos_discount',
         'pos_order_pricelist_change',
         'web_pdf_preview',  # vista previa de los pdf antes de imprimir
+        'account_partner_account_summary',  # Imprime el resumen de cuenta de un partner
     ],
     'data': [
     ],
