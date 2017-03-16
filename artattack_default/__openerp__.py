@@ -58,7 +58,10 @@ Customización Art Attack
         'hide_messaging',  # oculta el menu de mensajeria
         'base_multi_store',  # agrega capacidad de multitienda analogo a multicompañia
         # 'voucher_payment_check_fix',  # evita que aparezca cheques propios en medios de pago de cliente
-        'point_of_sale', # Terminal punto de venta
+        'point_of_sale',  # Terminal punto de venta
+        'MRP',  # planificacion de producción.
+        'pos_pricelist',
+        'pos_discount',
     ],
     'data': [
     ],
