@@ -63,7 +63,7 @@ Customización Art Attack
         'pos_pricelist',
         'pos_discount',
         'pos_order_pricelist_change',
-        'web-pdf-preview',  # vista previa de los pdf antes de imprimir
+        'web_pdf_preview',  # vista previa de los pdf antes de imprimir
     ],
     'data': [
     ],
