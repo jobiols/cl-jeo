@@ -35,19 +35,17 @@ Customización jeo Software
     'depends': [
         'l10n_ar_base',  # modulo base para localización argentina
         'disable_odoo_online',  # elimina referencias a odoo online
-        'res_config_settings_enterprise_remove', # This module removes enterprise-only features
-        'l10n_ar_account', #  Tiene toda la lógica de impuestos y tipos de documentos de la afip
-        'account_accountant', # Da al usuario administrador acceso a todas las características de contabilidad
-        'l10n_ar_afipws_fe', # Factura Electrónica Argentina
-        'l10n_ar_account_vat_ledger_citi', # Argentinian CITI Reports
-        'l10n_ar_bank', # Listado de bancos argentinos
-        'account_cancel', # Este módulo añade el campo 'Permitir cancelar asientos'
-        'l10n_ar_padron_afip', # Modulo para consulta y actualizacion desde padron AFIP
-        'l10n_ar_account_withholding', # Automatic Argentinian Withholdings on Payments
-
-        'sale', # Gestión de ventas
-
-
+        'res_config_settings_enterprise_remove',  # This module removes enterprise-only features
+        'l10n_ar_account',  # Tiene toda la lógica de impuestos y tipos de documentos de la afip
+        'account_accountant',  # Da al usuario administrador acceso a todas las características de contabilidad
+        'l10n_ar_afipws_fe',  # Factura Electrónica Argentina
+        'l10n_ar_account_vat_ledger_citi',  # Argentinian CITI Reports
+        'l10n_ar_bank',  # Listado de bancos argentinos
+        'account_cancel',  # Este módulo añade el campo 'Permitir cancelar asientos'
+        'l10n_ar_padron_afip',  # Modulo para consulta y actualizacion desde padron AFIP
+        'l10n_ar_account_withholding',  # Automatic Argentinian Withholdings on Payments
+        'account_clean_cancelled_invoice_number',  # permite cancelar una factura
+        'sale',  # Gestión de ventas
 
         # 'base_vat_unique',  # evita que duplique cuit
         # 'base_vat_unique_parent',  # evita que duplique cuit en multicompañia
