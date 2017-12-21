@@ -1,0 +1,59 @@
+<div style="font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-serif;
+    font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; ">
+    <p>Estimado ${object.partner_id.name},</p>
+    <p>Tiene una nueva factura disponible: </p>
+
+    <p>
+       &nbsp;&nbsp;<strong>REFERENCIAS</strong><br>
+       &nbsp;&nbsp;Invoice number: <strong>${object.number}</strong><br>
+       &nbsp;&nbsp;Invoice total: <strong>${object.amount_total} ${object.currency_id.name}</strong><br>
+       &nbsp;&nbsp;Fecha de factura: ${object.date_invoice}<br>
+       % if object.origin:
+       &nbsp;&nbsp;Su referencia: ${object.origin}<br>
+       % endif
+
+       % if object.user_id:
+       &nbsp;&nbsp;Su contacto: <a href="mailto:${object.user_id.email or ''}?subject=Invoice%20${object.number}">${object.user_id.name}</a>
+       % endif
+    </p>
+
+    % if object.paypal_url:
+    <br><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>
+    </p><p>También es posible el pago directo con Paypal:</p>
+        <a style="margin-left: 120px;" href="${object.paypal_url}">
+            <img class="oe_edi_paypal_button" src="/account/static/src/img/btn_paynowcc_lg.gif">
+        </a>
+    % endif
+
+    <br><br>
+
+    <p>No dude en contactar con nosotros ante cualquier duda.</p>
+    <p>Gracias por elegir a ${object.company_id.name or 'us'}!</p>
+    <br>
+    <br>
+
+    <div style="width: 375px; margin: 0px; padding: 0px; background-color: #8E0000;
+        border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px;
+        background-repeat: repeat no-repeat;">
+
+        <h3 style="font-size:24px;font-weight:500;margin: 0px; padding: 2px 14px; font-size: 12px; color: #DDD;">
+            <strong style="text-transform:uppercase;">${object.company_id.name}</strong></h3>
+    </div>
+
+    <div style="width: 347px; margin: 0px; padding: 5px 14px; line-height: 16px; background-color: #F2F2F2;">
+        <span style="color: #222; margin-bottom: 5px; display: block; ">
+            ${object.company_id.partner_id.sudo().with_context(show_address=True, html_format=True).name_get()[0][1] | safe}
+        </span>
+        % if object.company_id.phone:
+            <div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">
+                Phone:&nbsp; ${object.company_id.phone}
+            </div>
+        % endif
+        % if object.company_id.website:
+            <div>
+                Web :&nbsp;<a href="${object.company_id.website}">${object.company_id.website}</a>
+            </div>
+        %endif
+
+    </div>
+</div>
