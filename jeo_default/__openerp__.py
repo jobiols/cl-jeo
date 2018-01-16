@@ -23,14 +23,6 @@
     'version': '9.0.1.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
-    'description': """
-.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-   :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
-   :alt: License: AGPL-3
-
-Customización jeo Software
-==========================
-""",
     'author': 'jeo Software',
     'depends': [
         'support_branding_jeosoft',
