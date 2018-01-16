@@ -40,7 +40,6 @@ Customización jeo Software
         'account_accountant',  # permisos para contabilidad
         'web_export_view',  # reportes de vistas en excel
         'account_reconciliation_menu',  # agrega boton en partner
-
     ],
     'data': [
     ],
@@ -50,5 +49,17 @@ Customización jeo Software
     'application': True,
     'auto_install': False,
     'images': [],
+
+    'port': '8010',
+    'repos': [
+        {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '9.0'},
+        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '9.0'},
+    ],
+    'images': [
+        {'name': 'aeroo', 'usr': 'jobiols', 'img': 'aeroo-docs'},
+        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '9.0'},
+        {'name': 'postgres', 'usr': 'postgres', 'ver': '9.5'},
+    ]
+
 }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
