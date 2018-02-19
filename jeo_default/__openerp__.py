@@ -32,6 +32,7 @@
         'account_accountant',  # permisos para contabilidad
         'web_export_view',  # reportes de vistas en excel
         'account_reconciliation_menu',  # agrega boton en partner
+        'clean_cancelled_invoice_number', #  permite limpiar nro de factura cancelada
     ],
     'data': [
     ],
