@@ -43,7 +43,7 @@
     'auto_install': False,
     'images': [],
 
-    'port': '8010',
+    'port': '8069',
     'repos': [
         {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '9.0'},
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '9.0'},
