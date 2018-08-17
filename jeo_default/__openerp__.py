@@ -32,7 +32,7 @@
         'account_accountant',  # permisos para contabilidad
         'web_export_view',  # reportes de vistas en excel
         'account_reconciliation_menu',  # agrega boton en partner
-        'clean_cancelled_invoice_number', #  permite limpiar nro de factura cancelada
+        'clean_cancelled_invoice_number'  # limpiar factura cancelada
     ],
     'data': [
     ],
@@ -55,4 +55,4 @@
     ]
 
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+
