@@ -32,7 +32,7 @@
         'account_accountant',  # permisos para contabilidad
         'web_export_view',  # reportes de vistas en excel
         'account_reconciliation_menu',  # agrega boton en partner
-        'clean_cancelled_invoice_number'  # limpiar factura cancelada
+        #'clean_cancelled_invoice_number'  # limpiar factura cancelada
     ],
     'data': [
     ],
@@ -47,6 +47,7 @@
     'repos': [
         {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '9.0'},
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '9.0'},
+        {'usr': 'jobiols', 'repo': 'it-projects-llc-mail-addons', 'branch': '9.0'},
     ],
     'docker': [
         {'name': 'aeroo', 'usr': 'jobiols', 'img': 'aeroo-docs'},
