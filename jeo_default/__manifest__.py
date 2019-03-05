@@ -26,7 +26,7 @@
     'author': 'jeo Software',
     'depends': [
         # basic applications
-        #'sale_management',
+        'sale_management',
         #'account_invoicing',
         #'purchase',
 
