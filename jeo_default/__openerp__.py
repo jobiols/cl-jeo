@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # -----------------------------------------------------------------------------------
 #
 #    Copyright (C) 2016  jeo Software  (http://www.jeo-soft.com.ar)
@@ -20,7 +19,7 @@
 # -----------------------------------------------------------------------------------
 {
     'name': 'jeo Software',
-    'version': '12.0e.0.0',
+    'version': '11.0e.0.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
     'author': 'jeo Software',
@@ -37,30 +36,30 @@
 
     'port': '8069',
     'repos': [
-        {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '11.0'},
 
-        {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-sale', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-sale', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-account-financial-tools',
-         'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-product', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-miscellaneous', 'branch': '12.0'},
+         'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-product', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-miscellaneous', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-argentina-reporting',
-         'branch': '12.0'},
+         'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-reporting-engine', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-aeroo_reports', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'adhoc-partner', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'oca-partner-contact', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'oca-web', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'oca-server-tools', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'oca-social', 'branch': '12.0'},
-        {'usr': 'jobiols', 'repo': 'oca-sale-workflow', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-aeroo_reports', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-partner', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'oca-partner-contact', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'oca-web', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'oca-server-tools', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'oca-social', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'oca-sale-workflow', 'branch': '11.0'},
     ],
     'docker': [
-        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '12.0e'},
+        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '11.0e'},
         {'name': 'postgres', 'usr': 'postgres', 'ver': '10.1-alpine'},
         {'name': 'aeroo', 'usr': 'adhoc', 'img': 'aeroo-docs'},
 
