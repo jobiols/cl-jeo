@@ -19,7 +19,7 @@
 #
 # -----------------------------------------------------------------------------------
 {
-    'name': 'jeo Software',
+    'name': 'jeo9 Software',
     'version': '9.0.1.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
