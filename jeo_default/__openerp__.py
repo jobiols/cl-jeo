@@ -38,10 +38,30 @@
     'port': '8069',
     'repos': [
         {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '12.0'},
+
+        {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-sale', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-account-financial-tools',
+         'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-account-payment', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-product', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-miscellaneous', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-argentina-reporting',
+         'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-reporting-engine', 'branch': '11.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-aeroo_reports', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'adhoc-partner', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-partner-contact', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-web', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-server-tools', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-social', 'branch': '12.0'},
+        {'usr': 'jobiols', 'repo': 'oca-sale-workflow', 'branch': '12.0'},
     ],
     'docker': [
         {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '12.0e'},
         {'name': 'postgres', 'usr': 'postgres', 'ver': '10.1-alpine'},
+
     ]
 
 }
