@@ -20,19 +20,11 @@
 # -----------------------------------------------------------------------------------
 {
     'name': 'jeo Software',
-    'version': '9.0.1.0',
+    'version': '12.0e.0.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
     'author': 'jeo Software',
     'depends': [
-        'support_branding_jeosoft',
-        # instalacion de aplicaciones
-
-        'sale', 'l10n_ar_aeroo_sale',  # ventas
-        'account_accountant',  # permisos para contabilidad
-        'web_export_view',  # reportes de vistas en excel
-        'account_reconciliation_menu',  # agrega boton en partner
-        #'clean_cancelled_invoice_number'  # limpiar factura cancelada
     ],
     'data': [
     ],
@@ -45,14 +37,11 @@
 
     'port': '8069',
     'repos': [
-        {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '9.0'},
-        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '9.0'},
-        {'usr': 'jobiols', 'repo': 'it-projects-llc-mail-addons', 'branch': '9.0'},
+        {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '12.0'},
     ],
     'docker': [
-        {'name': 'aeroo', 'usr': 'jobiols', 'img': 'aeroo-docs'},
-        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '9.0'},
-        {'name': 'postgres', 'usr': 'postgres', 'ver': '9.5'},
+        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '12.0e'},
+        {'name': 'postgres', 'usr': 'postgres', 'ver': '10.1-alpine'},
     ]
 
 }
