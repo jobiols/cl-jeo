@@ -50,7 +50,7 @@
         {'usr': 'jobiols', 'repo': 'it-projects-llc-mail-addons', 'branch': '9.0'},
     ],
     'docker': [
-        {'name': 'aeroo', 'usr': 'jobiols', 'img': 'aeroo-docs'},
+        {'name': 'aeroo', 'usr': 'adhoc', 'img': 'aeroo-docs'},
         {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '9.0'},
         {'name': 'postgres', 'usr': 'postgres', 'ver': '9.5'},
     ]
