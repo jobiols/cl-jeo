@@ -24,6 +24,11 @@
     'summary': 'Customización Jeo Software',
     'author': 'jeo Software',
     'depends': [
+        'crm',
+        'sale_management',
+
+        # localizacion
+        'standard_depends_ee'
     ],
     'data': [
     ],
@@ -38,6 +43,8 @@
     'repos': [
         {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '11.0'},
+
+        {'usr': 'jobiols', 'repo': 'adhoc-enterprise-extensions', 'branch': '11.0'},
 
         {'usr': 'jobiols', 'repo': 'adhoc-odoo-argentina', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'adhoc-argentina-sale', 'branch': '11.0'},
