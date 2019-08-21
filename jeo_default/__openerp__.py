@@ -28,7 +28,8 @@
         'sale_management',
 
         # localizacion
-        'standard_depends_ee'
+        'standard_depends_ee',
+        'base_currency_inverse_rate',
     ],
     'data': [
     ],
