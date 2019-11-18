@@ -68,6 +68,8 @@
         {'usr': 'oca', 'repo': 'social', 'branch': '11.0'},
         {'usr': 'oca', 'repo': 'sale-workflow', 'branch': '11.0'},
         {'usr': 'oca', 'repo': 'contract', 'branch': '11.0'},
+
+        {'usr': 'it-projects-llc', 'repo': 'mail-addons', 'branch': '11.0'},
     ],
     'docker': [
         {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '11.0e'},
