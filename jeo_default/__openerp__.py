@@ -51,11 +51,12 @@
         {'usr': 'ingadhoc', 'repo': 'odoo-argentina', 'branch': '11.0'},
         {'usr': 'ingadhoc', 'repo': 'argentina-sale', 'branch': '11.0'},
         {'usr': 'ingadhoc', 'repo': 'sale', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'account-financial-tools',         'branch': '11.0'},
+        {'usr': 'ingadhoc', 'repo': 'account-financial-tools',
+         'branch': '11.0'},
         {'usr': 'ingadhoc', 'repo': 'account-payment', 'branch': '11.0'},
         {'usr': 'ingadhoc', 'repo': 'product', 'branch': '11.0'},
         {'usr': 'ingadhoc', 'repo': 'miscellaneous', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'argentina-reporting',         'branch': '11.0'},
+        {'usr': 'ingadhoc', 'repo': 'argentina-reporting', 'branch': '11.0'},
         {'usr': 'ingadhoc', 'repo': 'reporting-engine', 'branch': '11.0'},
         {'usr': 'ingadhoc', 'repo': 'aeroo_reports', 'branch': '11.0'},
         {'usr': 'ingadhoc', 'repo': 'partner', 'branch': '11.0'},
@@ -79,4 +80,3 @@
     ]
 
 }
-
