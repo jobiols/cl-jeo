@@ -1,0 +1,49 @@
+<div>
+<p>Estimado ${object.partner_id.name}
+% set access_action = object.with_context(force_website=True).get_access_action()
+% set is_online = access_action and access_action['type'] == 'ir.actions.act_url'
+% set access_url = object.get_mail_url()
+
+% if object.partner_id.parent_id:
+    (<i>${object.partner_id.parent_id.name}</i>)
+% endif
+,</p>
+<p>Remitimos adjunta su
+% if object.number:
+<strong>factura ${object.display_name}</strong>
+% else:
+factura
+% endif
+% if object.origin:
+(con referencia: ${object.origin})
+% endif
+por un importe de <strong>${format_amount(object.amount_total, object.currency_id)}</strong>
+efectuado por ${object.company_id.name}.
+</p>
+
+<br>
+<br>
+
+% if object.state=='paid':
+    <p>Esta factura ya se encuentra pagada.</p>
+% else:
+    <p>Por favor remita el pago lo antes que pueda.</p>
+
+    <p>
+    Banco Industrial S.A.<br/>
+    CBU: 3220001858006766890016<br/>
+    Alias: jeo-software<br/>
+    Cuenta: Caja de Ahorro 1-676689/1<br/>
+    Moneda: Peso Argentino<br/>
+    Sucursal: 1<br/>
+    CUIT/CUIL: 20118629702<br/>
+    </p>
+% endif
+
+<p>Gracias,</p>
+<p style="color:#888888">
+% if object.user_id and object.user_id.signature:
+    ${object.user_id.signature | safe}
+% endif
+</p>
+</div>
