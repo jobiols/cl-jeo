@@ -9,6 +9,8 @@ services:
     image: jobiols/odoo-ent:11.0e
     container_name: odoo
     restart: unless-stopped
+    ports:
+      - "8069:8069"
     volumes:
       - /odoo_ar/odoo-11.0e/jeo/config:/opt/odoo/etc/
       - /odoo_ar/odoo-11.0e/jeo/data_dir:/opt/odoo/data
@@ -29,7 +31,7 @@ services:
       - POSTGRES_USER=odoo
       - POSTGRES_PASSWORD=odoo
     volumes:
-      - /odoo_ar/odoo-13.0e/gham/postgresql:/var/lib/postgresql/data
+      - /odoo_ar/odoo-11.0e/jeo/postgresql:/var/lib/postgresql/data
 
   aeroo:
     image: jobiols/aeroo-docs
@@ -50,7 +52,7 @@ services:
 # scope = drive
 # token = {"access_token":"ya29.a0AfH6SMAXLhmD0mZixGZypKITwLFUFre_k8CkjS-pkm7NR6FnlA6FXHSqZGKfb1AYX3YtPtpEQx99L7fztAE0-_MZvwxQVwPjQZpqBB6wQK3Y7-OrNTIx4Ieat36NWAzc_dbjkKn47RpedCY6n6i6cHItlIZCMXBh8b8","token_type":"Bearer","refresh_token":"1//0hKAFyqgS9K8gCgYIARAAGBESNwF-L9IrldpQqehi_58BhQXvDtcBsTmYp_Do5WlTVz9lk5zne87vyyPIKyYFznRPn1kKdOxgGOw","expiry":"2020-08-22T23:43:35.614122882Z"}
 
-  rclone-mount:
+  rclone:
     container_name: rclone
     image: mumiehub/rclone-mount
     restart: unless-stopped
