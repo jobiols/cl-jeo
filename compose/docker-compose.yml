@@ -1,0 +1,74 @@
+# Compose file odoo jeo + rclone
+# Version 2020-08-20
+###############################################################################
+
+version: '2'
+services:
+
+  odoo:
+    image: jobiols/odoo-ent:11.0e
+    container_name: odoo
+    restart: unless-stopped
+    volumes:
+      - /odoo_ar/odoo-11.0e/jeo/config:/opt/odoo/etc/
+      - /odoo_ar/odoo-11.0e/jeo/data_dir:/opt/odoo/data
+      - /odoo_ar/odoo-11.0e/jeo/log:/var/log/odoo
+      - /odoo_ar/odoo-11.0e/jeo/sources:/opt/odoo/custom-addons
+      - /odoo_ar/odoo-11.0e/jeo/backup_dir:/var/odoo/backups/
+    links:
+      - postgres:db
+      - aeroo
+    depends_on: 
+      - rclone
+
+  postgres:
+    image: postgres:10.1-alpine
+    container_name: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    volumes:
+      - /odoo_ar/odoo-13.0e/gham/postgresql:/var/lib/postgresql/data
+
+  aeroo:
+    image: jobiols/aeroo-docs
+    container_name: aeroo
+
+# Configuracion para RCLONE hay que crear el rclone.conf para eso ver el video del pelado.
+# https://www.youtube.com/watch?v=mnDYJ2ZpdxU&t=181s
+# https://github.com/Mumie-hub/
+#
+# Crear archivo de configuracion
+# sd run -it -v ~/.config/rclone:/config/rclone rclone/rclone config
+#
+# ejemplo para jeo en jeosoft
+# [gdrive]
+# type = drive
+# client_id = 232374297023-r4r7pkjksvbcksi5un0k94deu7p80vk6.apps.googleusercontent.com
+# client_secret = zrjB3pACv7EAAsY5dmpEmVgz
+# scope = drive
+# token = {"access_token":"ya29.a0AfH6SMAXLhmD0mZixGZypKITwLFUFre_k8CkjS-pkm7NR6FnlA6FXHSqZGKfb1AYX3YtPtpEQx99L7fztAE0-_MZvwxQVwPjQZpqBB6wQK3Y7-OrNTIx4Ieat36NWAzc_dbjkKn47RpedCY6n6i6cHItlIZCMXBh8b8","token_type":"Bearer","refresh_token":"1//0hKAFyqgS9K8gCgYIARAAGBESNwF-L9IrldpQqehi_58BhQXvDtcBsTmYp_Do5WlTVz9lk5zne87vyyPIKyYFznRPn1kKdOxgGOw","expiry":"2020-08-22T23:43:35.614122882Z"}
+
+  rclone-mount:
+    container_name: rclone
+    image: mumiehub/rclone-mount
+    restart: unless-stopped
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - /home/jobiols/.config/rclone:/config
+      # - /mnt/gdrive:/mnt/mediaefs:shared
+      - /odoo_ar/odoo-11.0e/jeo/backup_dir:/mnt/mediaefs:shared
+    logging:
+      options:
+        max-size: 1g
+    devices:
+      - /dev/fuse
+    environment: 
+      - 'RemotePath=gdrive:'
+      - 'MountCommands=--allow-other --allow-non-empty --buffer-size 256M --vfs-cache-mode writes'
+      - 'ConfigName=rclone.conf'
