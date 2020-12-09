@@ -19,7 +19,7 @@
 # -----------------------------------------------------------------------------------
 {
     'name': 'jeo Software',
-    'version': '11.0e.0.0',
+    'version': '11.0.0.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
     'author': 'jeo Software',
@@ -40,43 +40,51 @@
     'auto_install': False,
     'images': [],
 
+
+    # manifest version, if omitted it is backward compatible but
+    # oe will show a deprecation warning
+    'env-ver': '2',
+    # Configuration data for odoo.conf
+    'config': [],
+
+    # Default to CE, can be ommited
+    'odoo-license': 'EE',
+
     'port': '8069',
-    'repos': [
-        {'usr': 'jobiols', 'repo': 'cl-jeo', 'branch': '11.0'},
-        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '11.0'},
-        {'usr': 'ntsystemwork', 'repo': 'common-addons', 'branch': '11.0',
-         'ssh': True},
+    'git-repos': [
+        'https://github.com/jobiols/cl-jeo.git',
+        'https://github.com/jobiols/odoo-addons.git',
+#        'https://github.com/ntsystemwork/common-addons.git',
+        'https://github.com/ingadhoc/odoo-argentina.git',
+        'https://github.com/ingadhoc/argentina-sale.git',
+        'https://github.com/ingadhoc/sale.git',
+        'https://github.com/ingadhoc/account-financial-tools.git',
+        'https://github.com/ingadhoc/account-payment.git',
+        'https://github.com/ingadhoc/product.git',
+        'https://github.com/ingadhoc/miscellaneous.git',
+        'https://github.com/ingadhoc/argentina-reporting.git',
+        'https://github.com/ingadhoc/reporting-engine.git',
+        'https://github.com/ingadhoc/reporting-engine.git',
+        'https://github.com/ingadhoc/aeroo_reports.git',
+        'https://github.com/ingadhoc/partner.git',
+        'https://github.com/ingadhoc/account-invoicing.git',
+        'https://github.com/ingadhoc/stock.git',
 
-        {'usr': 'ingadhoc', 'repo': 'odoo-argentina', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'argentina-sale', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'sale', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'account-financial-tools',
-         'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'account-payment', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'product', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'miscellaneous', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'argentina-reporting', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'reporting-engine', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'aeroo_reports', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'partner', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'account-invoicing', 'branch': '11.0'},
-        {'usr': 'ingadhoc', 'repo': 'stock', 'branch': '11.0'},
+        'https://github.com/oca/server-ux.git',
+        'https://github.com/oca/partner-contact.git',
+        'https://github.com/oca/web.git',
+        'https://github.com/oca/server-tools.git',
+        'https://github.com/oca/social.git',
+        'https://github.com/oca/sale-workflow.git',
+        'https://github.com/oca/contract.git',
 
-        {'usr': 'oca', 'repo': 'server-ux', 'branch': '11.0'},
-        {'usr': 'oca', 'repo': 'partner-contact', 'branch': '11.0'},
-        {'usr': 'oca', 'repo': 'web', 'branch': '11.0'},
-        {'usr': 'oca', 'repo': 'server-tools', 'branch': '11.0'},
-        {'usr': 'oca', 'repo': 'social', 'branch': '11.0'},
-        {'usr': 'oca', 'repo': 'sale-workflow', 'branch': '11.0'},
-        {'usr': 'oca', 'repo': 'contract', 'branch': '11.0'},
+        'https://github.com/it-projects-llc/mail-addons.git',
 
-        {'usr': 'it-projects-llc', 'repo': 'mail-addons', 'branch': '11.0'},
     ],
-    'docker': [
-        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '11.0e'},
-        {'name': 'postgres', 'usr': 'postgres', 'ver': '10.1-alpine'},
-        {'name': 'aeroo', 'usr': 'adhoc', 'img': 'aeroo-docs'},
-
+    'docker-images': [
+        'odoo jobiols/odoo-ent:11.0e',
+        'postgres postgres:10.1-alpine',
+        'aeroo adhoc/aeroo-docs'
     ]
 
 }

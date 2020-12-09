@@ -1,4 +1,17 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "sqltools.connections": [
+
+        {
+            "database": "jeo_prod",
+            "driver": "PostgreSQL",
+            "name": "Test",
+            "password": "odoo",
+            "port": 5432,
+            "previewLimit": 50,
+            "server": "localhost",
+            "username": "odoo"
+        }
+    ],
 }
