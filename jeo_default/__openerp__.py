@@ -26,6 +26,7 @@
     'depends': [
         'crm',
         'sale_management',
+        'web_decimal_numpad_dot',
 
         # localizacion
         'standard_depends_ee',
@@ -44,8 +45,11 @@
     # manifest version, if omitted it is backward compatible but
     # oe will show a deprecation warning
     'env-ver': '2',
+
     # Configuration data for odoo.conf
-    'config': [],
+    'config': [
+        'workers = 2'
+    ],
 
     # Default to CE, can be ommited
     'odoo-license': 'EE',
@@ -54,7 +58,6 @@
     'git-repos': [
         'https://github.com/jobiols/cl-jeo.git',
         'https://github.com/jobiols/odoo-addons.git',
-#        'https://github.com/ntsystemwork/common-addons.git',
         'https://github.com/ingadhoc/odoo-argentina.git',
         'https://github.com/ingadhoc/argentina-sale.git',
         'https://github.com/ingadhoc/sale.git',
