@@ -30,6 +30,7 @@
 
         # localizacion
         'standard_depends_ee',
+        'l10n_ar_fe_qr'
 
     ],
     'data': [
@@ -56,7 +57,8 @@
 
     'port': '8069',
     'git-repos': [
-        'https://github.com/jobiols/cl-jeo.git',
+        'git@github.com:jobiols/cl-jeo.git',
+        'https://github.com/jobiols/odoo-jeo-ce.git',
         'https://github.com/jobiols/odoo-addons.git',
         'https://github.com/ingadhoc/odoo-argentina.git',
         'https://github.com/ingadhoc/argentina-sale.git',
