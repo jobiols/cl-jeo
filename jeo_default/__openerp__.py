@@ -18,7 +18,7 @@
 #
 # -----------------------------------------------------------------------------------
 {
-    'name': 'jeo Software',
+    'name': 'jeo',
     'version': '11.0.0.0',
     'category': 'Tools',
     'summary': 'Customización Jeo Software',
