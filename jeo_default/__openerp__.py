@@ -60,6 +60,7 @@
         'git@github.com:jobiols/cl-jeo.git',
         'https://github.com/jobiols/odoo-jeo-ce.git',
         'https://github.com/jobiols/odoo-addons.git',
+        'git@github.com:jobiols/odoo-private-addons.git',       
         'https://github.com/ingadhoc/odoo-argentina.git',
         'https://github.com/ingadhoc/argentina-sale.git',
         'https://github.com/ingadhoc/sale.git',
